@@ -13,6 +13,7 @@
 		7D6CDBA320F4351100A1880C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CDBA120F4351100A1880C /* Main.storyboard */; };
 		7D6CDBA520F4351200A1880C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CDBA420F4351200A1880C /* Assets.xcassets */; };
 		7D6CDBA820F4351200A1880C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CDBA620F4351200A1880C /* LaunchScreen.storyboard */; };
+		7D6CDBB020F4367C00A1880C /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6CDBAF20F4367C00A1880C /* Assignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7D6CDBA420F4351200A1880C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D6CDBA720F4351200A1880C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D6CDBA920F4351200A1880C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D6CDBAF20F4367C00A1880C /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		7D6CDB9A20F4351100A1880C /* Assignment Notebook */ = {
 			isa = PBXGroup;
 			children = (
+				7D6CDBAF20F4367C00A1880C /* Assignment.swift */,
 				7D6CDB9B20F4351100A1880C /* AppDelegate.swift */,
 				7D6CDB9D20F4351100A1880C /* MasterViewController.swift */,
 				7D6CDB9F20F4351100A1880C /* DetailViewController.swift */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6CDBB020F4367C00A1880C /* Assignment.swift in Sources */,
 				7D6CDBA020F4351100A1880C /* DetailViewController.swift in Sources */,
 				7D6CDB9E20F4351100A1880C /* MasterViewController.swift in Sources */,
 				7D6CDB9C20F4351100A1880C /* AppDelegate.swift in Sources */,
