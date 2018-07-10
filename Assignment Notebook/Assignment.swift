@@ -18,6 +18,6 @@ class Assignment: Codable {
         self.nameOfAssignment = nameOfAssignment
         self.courseName = courseName
         self.dueDate = dueDate
-        self.assignmentDiscription = assignmentDiscription
+        self.assignmentDescription = assignmentDescription
     }
 }

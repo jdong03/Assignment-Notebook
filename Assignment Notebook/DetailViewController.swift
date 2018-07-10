@@ -10,15 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
-    func configureView() {
-        // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
+    @IBOutlet weak var nameOfAssignment: UITextField!
+    @IBOutlet weak var courseName: UITextField!
+    @IBOutlet weak var dueDate: UITextField!
+    @IBOutlet weak var assignmentDescription: UITextField!
+    var detailItem: Assignment? {
+        didSet {
+            // Update the view.
+            configureView()
         }
     }
 
@@ -32,14 +31,24 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    var detailItem: NSDate? {
-        didSet {
-            // Update the view.
-            configureView()
+    override func viewWillDisappear(_ animated: Bool) {
+        if let assignment = self.detailItem {
+            assignment.nameOfAssignment = nameOfAssignment.text!
+            assignment.courseName = courseName.text!
+            assignment.dueDate = dueDate.text!
+            assignment.assignmentDescription = assignmentDescription.text!
         }
     }
-
-
+    func configureView() {
+        //Update the user interface for the detail item
+        if let city = self.detailItem {
+            if nameOfAssignment != nil {
+                nameOfAssignment.text = assignment.name
+                courseName.text = assignment.state
+                dueDate.text = Assignment.population
+                assignmentDescription.text = Assignment.assignmentDiscription
+            }
+        }
+    }
 }
 

@@ -91,6 +91,12 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Assignment Details" id="mOI-FS-AaM"/>
+                    <connections>
+                        <outlet property="assignmentDescription" destination="Ko4-sw-JNx" id="k41-8a-rjh"/>
+                        <outlet property="courseName" destination="u6K-2C-0rb" id="17I-Aw-5XN"/>
+                        <outlet property="dueDate" destination="hyV-z6-qeg" id="sK4-P5-rfs"/>
+                        <outlet property="nameOfAssignment" destination="yd9-J7-xhQ" id="d1s-UQ-gR5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
